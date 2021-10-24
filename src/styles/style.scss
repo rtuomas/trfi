@@ -1,0 +1,184 @@
+
+$HomeBackgroundColor : #1111644f;
+$AboutBackgroundColor : rgb(0, 0, 0);
+$ProjectsBackgroundColor : #000000;
+$ProjectListBackgroundColor : rgb(241, 217, 217);
+$ProjectBackgroundColor : rgb(241, 217, 217);
+$FooterBackgroundColor : #3a3737;
+
+@mixin flexCenterWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+html {
+  width: 100% !important;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.Home {
+  @include flexCenterWrap();
+  background-color: $HomeBackgroundColor;
+  height: 100vh;
+
+  h1 {
+    color: #660000;
+    &:hover {
+      scale: 2x;
+    }
+  }
+}
+
+.About {
+  background-color: $AboutBackgroundColor;
+  div {
+    @include flexCenterWrap();
+    color: #660000;
+    padding: 10px;
+  }
+}
+
+.Projects {
+  @include flexCenterWrap();
+  background-color: $ProjectsBackgroundColor;
+
+  .Projectlist {
+    @include flexCenterWrap();
+    background-color: $ProjectListBackgroundColor;
+
+
+    h1 {
+      color: #660000;
+    }
+
+    li {
+      list-style: none;
+      background-color: $ProjectBackgroundColor;
+      position: relative;
+      z-index: 2;
+      padding: 10px;
+
+      a h2{text-decoration: underline;}
+    }
+
+
+    .Project {
+      text-decoration: none;
+
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-color: rgb(203, 228, 236);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 250ms;
+      }
+
+      &:hover::before, &:focus::before {
+        transform: scaleX(1)
+      }
+
+
+    }
+
+  }
+
+}
+
+.Footer {
+  @include flexCenterWrap();
+  background-color: $FooterBackgroundColor;
+
+  .Logos {
+    margin: 5px;
+
+    img {
+      margin: 6px;
+    }
+
+    .React-logo {
+      animation: rotation 5s infinite linear;
+    }
+
+    .Sass-logo {
+      transform: rotateX(40deg);
+      animation: sass 2s infinite;
+      animation-direction: alternate;
+    }
+  }
+
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sass {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(50deg);
+  }
+}
+
+@media (min-width:434px) {
+
+  .Projectlist li {
+     margin-right: 20px;
+     margin-left: 20px;
+  }
+}
+
+
+/* SCROLL BAR*/
+* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+* ::-webkit-scrollbar-track {
+  background: #3a3737;
+}
+
+* ::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 8px;
+  border: 2px dashed #660000;
+}
+
+* ::-webkit-scrollbar-thumb:hover {
+  background-color: #660000;
+  border-radius: 8px;
+  border: 2px dashed #000000;
+}
+

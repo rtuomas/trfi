@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import React, {useState} from 'react'
+import Home from './components/Home'
+import About from './components/About'
+import Projects from './components/Projects'
+import Footer from './components/Footer'
+import Progress from './components/Progress'
+import video from './background.mp4';
+const projects = require('./projects.json')
+
 
 function App() {
+
+  const [progress, setProgress] = useState(0)
+
+  window.onscroll = () => {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+
+    //ocument.getElementById("bar").style.width = scrolled + "%";
+    setProgress(scrolled)
+  }
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <video id="background-video" loop autoPlay muted>
+        <source src={video} type="video/mp4"/>
+        Your browser does not support the video tag.
+      </video>
+
+      <Home />
+      <Progress progress={progress}/>
+      <About />
+      <Projects projects={projects}/>
+      <Footer />
     </div>
   );
 }
