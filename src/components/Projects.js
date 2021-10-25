@@ -2,8 +2,7 @@ import React from 'react';
 import '../styles/style.css'
 import Project from './Project'
 
-function Projects(props) {
-
+function Projects({projects}) {
 
   return (
     <div className="Projects">
@@ -11,7 +10,7 @@ function Projects(props) {
 
         <h1>Projects here</h1>
 
-        {props.projects.map(project =>
+        {projects.map(project =>
             <Project
               key={project._id ? project._id : Math.random()}
               name={project.name}

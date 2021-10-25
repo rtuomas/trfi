@@ -1,46 +1,11 @@
 [
 
   {
-    "name": "TBD Game Project",
+    "name": "tuomasrajala.fi",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
-    "technology": "C#",
-    "date": "10/2019",
-    "source": "https://github.com/Vrites/TBD-Game-Project"
-  },
-  {
-    "name": "Zumo Robot",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
-    "technology": "C",
-    "date": "12/2019",
-    "source": "https://github.com/rtuomas/ZumoRobot"
-  },
-  {
-    "name": "Motivator",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
-    "technology": "Java",
-    "date": "03/2020",
-    "source": "https://github.com/IlmastMaksim/Motivator-App"
-  },
-  {
-    "name": "Emergency Simulator",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
-    "technology": "Java, SQL",
-    "date": "10/2020",
-    "source": "https://github.com/rtuomas/ER_simulation"
-  },
-  {
-    "name": "Frisbeegolf",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
-    "technology": "Javascript, CSS, HTML, SQL",
-    "date": "12/2020",
-    "source": "https://github.com/rtuomas/frisbeegolf"
-  },
-  {
-    "name": "Game Environment",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
-    "technology": "Java, CSS, SQL, Hibernate",
-    "date": "05/2021",
-    "source": "https://github.com/rtuomas/GameEnvironment"
+    "technology": "React.js, MongoDB",
+    "date": "10/2020 - today",
+    "source": "https://tuomasrajala.fi/"
   },
   {
     "name": "Hautapaikat",
@@ -50,11 +15,46 @@
     "source": "https://github.com/rtuomas/hautapaikat"
   },
   {
-    "name": "tuomasrajala.fi",
+    "name": "Game Environment",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
-    "technology": "React.js, MongoDB",
-    "date": "10/2020 - today",
-    "source": "https://tuomasrajala.fi/"
+    "technology": "Java, CSS, SQL, Hibernate",
+    "date": "05/2021",
+    "source": "https://github.com/rtuomas/GameEnvironment"
+  },
+  {
+    "name": "Frisbeegolf",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
+    "technology": "Javascript, CSS, HTML, SQL",
+    "date": "12/2020",
+    "source": "https://github.com/rtuomas/frisbeegolf"
+  },
+    {
+    "name": "Emergency Simulator",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
+    "technology": "Java, SQL",
+    "date": "10/2020",
+    "source": "https://github.com/rtuomas/ER_simulation"
+  },
+  {
+    "name": "Motivator",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
+    "technology": "Java",
+    "date": "03/2020",
+    "source": "https://github.com/IlmastMaksim/Motivator-App"
+  },
+  {
+    "name": "Zumo Robot",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
+    "technology": "C",
+    "date": "12/2019",
+    "source": "https://github.com/rtuomas/ZumoRobot"
+  },
+  {
+    "name": "TBD Game Project",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
+    "technology": "C#",
+    "date": "10/2019",
+    "source": "https://github.com/Vrites/TBD-Game-Project"
   }
 
 ]
