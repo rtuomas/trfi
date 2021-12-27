@@ -1,57 +1,64 @@
 [
 
   {
-    "name": "tuomasrajala.fi",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
-    "technology": "React.js, MongoDB",
+    "name": "My website",
+    "description": "I'll list my/my teams projects in this website. This is itself a ongoing project and I'll update it sooner or later...",
+    "technology": "React.js, Sass",
     "date": "10/2020 - today",
-    "source": "https://tuomasrajala.fi/"
+    "source": "https://tuomasrajala.herokuapp.com/"
   },
   {
-    "name": "Hautapaikat",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
-    "technology": "React.js, MongoDB",
+    "name": "Shopping List",
+    "description": "I made this application to ease my shopping trips. Me and my partner use it to avoid buying same products. When application is opened, it firstly fetch the products from database and lists them on screen. Fetching is informed as spinning arrow. Plus-button opens a modal where you can add new product.",
+    "technology": "React-Native, Node.js, MongoDB Atlas",
+    "date": "12/2021 - ",
+    "source": "https://github.com/rtuomas/ShoppingList"
+  },
+  {
+    "name": "Hautapaikat/Graves",
+    "description": "Website for browsing graves of known finnish people. You can register and log in to the site, which enables you to add new graves and delete old ones. Graves are shown in a map according to coordinates and contain basic information about the deceased. The account is authenticated with JSON Web Token. The search bar allows you to filter search results with either name, category with #-sign and locations with @-sign.",
+    "technology": "JS, HTML, CSS, React (as framework), Nodejs, Express, JWT, MongoDB Atlas",
     "date": "09/2021 - 10/2021",
     "source": "https://github.com/rtuomas/hautapaikat"
   },
   {
     "name": "Game Environment",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
+    "description": "The project team consisted of 5 IT engineering students in Metropolia UAS. The subject chosen for the software was a game-environment software where users can play a variety of games to help them through lockdown. The name for the software is Peliympäristö which is finnish for a game-environment. This software includes the game itself (poker), chat feature, statistics and theme/language options.",
     "technology": "Java, CSS, SQL, Hibernate",
     "date": "05/2021",
     "source": "https://github.com/rtuomas/GameEnvironment"
   },
   {
     "name": "Frisbeegolf",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
-    "technology": "Javascript, CSS, HTML, SQL",
+    "description": "Do you want to keep track of your disc golf scores? This website allows you to sign up, save your scores to specific track and explore new ones!",
+    "technology": "Javascript, CSS, HTML, SQL, MariaDB",
     "date": "12/2020",
     "source": "https://github.com/rtuomas/frisbeegolf"
   },
     {
     "name": "Emergency Simulator",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
+    "description": "This simulator allows you to analyze the patient flow at emergency department. To find out the bottle necks of the department, you can alter examination speed of either doctors or nurses.",
     "technology": "Java, SQL",
     "date": "10/2020",
     "source": "https://github.com/rtuomas/ER_simulation"
   },
   {
     "name": "Motivator",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
-    "technology": "Java",
+    "description": "Mobile application (Android) to keep track of your average running speed, BMI and gym results in form of a chart.",
+    "technology": "Java, Android Studio",
     "date": "03/2020",
     "source": "https://github.com/IlmastMaksim/Motivator-App"
   },
   {
     "name": "Zumo Robot",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
+    "description": "This source code was used in the second period of the first year in Metropolia UAS. It consists of weekly labs and three main scripts for the final week: maze solving, line following and sumo wrestling for a Zumo Robot.",
     "technology": "C",
     "date": "12/2019",
     "source": "https://github.com/rtuomas/ZumoRobot"
   },
   {
     "name": "TBD Game Project",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quos, porro unde molestias dolor illum, exercitationem aliquid ipsa culpa debitis veniam facere ex consectetur reprehenderit, quae obcaecati. Adipisci, ratione itaque!",
+    "description": "Local co-op multiplayer 2d game. Goal is to kill the other player with guns.",
     "technology": "C#",
     "date": "10/2019",
     "source": "https://github.com/Vrites/TBD-Game-Project"

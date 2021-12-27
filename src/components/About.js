@@ -5,7 +5,7 @@ function About() {
     <div className="About">
       <div>
         <h1>Welcome to my homepage!</h1>
-        <p>I'm a software developer student at Metropolia UAS... This web page is running on Raspberry Pi 4 Model B. Please consider the amount of traffic.</p>
+        <p>I'm a software developer student at Metropolia UAS... I've listed some of my projects here. Feel free to check them out! :)</p>
         <p>Notice! This webpage is not ready yet, be merciful!</p>
       </div>
     </div>

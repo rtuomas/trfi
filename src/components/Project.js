@@ -4,7 +4,7 @@ import React from 'react'
 function Project(props) {
 
   return (
-    <li>
+    <li className="ProjectLi">
       <a href={props.source} target="_blank" rel="noreferrer" className="Project">
         <h2>{props.name}</h2>
         <p>{props.description}</p>

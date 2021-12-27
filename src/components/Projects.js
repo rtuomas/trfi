@@ -22,8 +22,6 @@ function Projects({projects}) {
           )}
       </div>
 
-
-
     </div>
   );
 }
