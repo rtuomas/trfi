@@ -237,6 +237,7 @@ html {
   z-index: 2;
   padding: 10px;
   border-radius: 25px;
+  max-width: 65%;
 }
 
 .Projects .Projectlist li a h2 {
