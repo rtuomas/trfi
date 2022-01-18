@@ -135,6 +135,7 @@ html {
 }
 
 .About div p {
+  border-right: .15em solid orange;
   font-size: 14px;
   white-space: nowrap;
   overflow: hidden;
@@ -144,8 +145,8 @@ html {
 .About div p:nth-child(2) {
   width: 33em;
   opacity: 0;
-  -webkit-animation: type 5s steps(40, end);
-          animation: type 5s steps(40, end);
+  -webkit-animation: type 5s steps(55, end), blink 0.3s step-end infinite alternate;
+          animation: type 5s steps(55, end), blink 0.3s step-end infinite alternate;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -153,8 +154,8 @@ html {
 .About div p:nth-child(3) {
   width: 22em;
   opacity: 0;
-  -webkit-animation: type 5s steps(40, end);
-          animation: type 5s steps(40, end);
+  -webkit-animation: type 5s steps(37, end), blink 0.3s step-end infinite alternate;
+          animation: type 5s steps(37, end), blink 0.3s step-end infinite alternate;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 5.1s;
@@ -164,8 +165,8 @@ html {
 .About div p:nth-child(4) {
   width: 19em;
   opacity: 0;
-  -webkit-animation: type 5s steps(40, end);
-          animation: type 5s steps(40, end);
+  -webkit-animation: type 5s steps(31, end), blink 0.3s step-end infinite alternate;
+          animation: type 5s steps(31, end), blink 0.3s step-end infinite alternate;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 10.2s;
@@ -175,8 +176,8 @@ html {
 .About div p:nth-child(5) {
   width: 31em;
   opacity: 0;
-  -webkit-animation: type 5s steps(40, end);
-          animation: type 5s steps(40, end);
+  -webkit-animation: type 5s steps(51, end), blink 0.3s step-end infinite alternate;
+          animation: type 5s steps(51, end), blink 0.3s step-end infinite alternate;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 15.3s;
