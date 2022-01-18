@@ -22,6 +22,7 @@ html {
 *, *::before, *::after {
   box-sizing: border-box;
   overflow-x: auto;
+  font-family: "Courier";
 }
 
 #background-video {
@@ -33,7 +34,12 @@ html {
   object-fit: cover;
   opacity: 0.9;
   z-index: -1;
+  filter: brightness(10%);
 }
+
+
+
+
 
 .Home {
   @include flexCenterWrap();
@@ -41,29 +47,125 @@ html {
   height: 100vh;
 
   h1 {
-    color: #660000;
+    color: #ffa1a1;
+    font-size: 300%;
+    padding: 70px;
+    transition: 1000ms;
     &:hover {
-      scale: 2x;
+      text-shadow: rgba(255, 174, 0, 0.63) 0px 0px 70px;
+      transition: 1000ms;
     }
+  }
+}
+
+
+
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
 
 .About {
   background-color: $AboutBackgroundColor;
+  box-shadow: -1px 20px 60px 18px rgba(0, 0, 0, 0.979);
+  transition: 1000ms;
   div {
     @include flexCenterWrap();
-    color: #660000;
+
+    color: #ffa1a1;
+
+
+    p {
+
+      //border-right: .15em solid orange;
+
+      font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-top: 0;
+
+      &:nth-child(2){
+        width: 33em;
+        opacity: 0;
+        animation: type 5s steps(40, end);
+        animation-fill-mode: forwards;
+      }
+      &:nth-child(3){
+        width: 22em;
+        opacity: 0;
+        animation: type 5s steps(40, end);
+        animation-fill-mode: forwards;
+        animation-delay: 5.1s;
+      }
+      &:nth-child(4){
+        width: 19em;
+        opacity: 0;
+        animation: type 5s steps(40, end);
+        animation-fill-mode: forwards;
+        animation-delay: 10.2s;
+      }
+      &:nth-child(5){
+        width: 31em;
+        opacity: 0;
+        animation: type 5s steps(40, end);
+        animation-fill-mode: forwards;
+        animation-delay: 15.3s;
+      }
+    }
+    /*
     padding: 10px;
+    p {
+      font-size: 120%;
+    }
+    */
+  }
+  &:hover {
+    box-shadow: -1px 20px 60px 18px rgba(255, 0, 0, 0.979);
+    transition: 1000ms;
   }
 }
 
+
+
+
+
+
+
+
+
+
+
 .Projects {
   @include flexCenterWrap();
-  background-color: $ProjectsBackgroundColor;
+  //background-color: $ProjectsBackgroundColor;
+
+  background:
+    url(./overlay_trfi.png);
 
   .Projectlist {
     @include flexCenterWrap();
-    background-color: $ProjectListBackgroundColor;
+    //background-color: $ProjectListBackgroundColor;
 
 
     h1 {
@@ -72,10 +174,11 @@ html {
 
     li {
       list-style: none;
-      background-color: $ProjectBackgroundColor;
+      //background-color: $ProjectBackgroundColor;
       position: relative;
       z-index: 2;
       padding: 10px;
+      border-radius: 25px;
 
       a h2{text-decoration: underline;}
     }
@@ -83,7 +186,6 @@ html {
 
     .Project {
       text-decoration: none;
-
 
       &::before {
         content: '';
@@ -93,14 +195,16 @@ html {
         bottom: 0;
         right: 0;
         z-index: -1;
-        background-color: rgb(203, 228, 236);
+        background: linear-gradient(90deg, rgba(255, 233, 242, 0.479) 0%, rgba(255, 90, 90, 0.363) 100%);
         transform: scaleX(0);
-        transform-origin: left;
-        transition: 250ms;
+        //transform-origin: left;
+        transition: 400ms;
+        filter: blur(50px);
       }
 
       &:hover::before, &:focus::before {
-        transform: scaleX(1)
+        transform: scaleX(1);
+
       }
 
 
@@ -110,9 +214,14 @@ html {
 
 }
 
+
 .Footer {
   @include flexCenterWrap();
   background-color: $FooterBackgroundColor;
+
+  &:hover {
+    filter: hue-rotate(180deg);
+  }
 
   .Logos {
     margin: 5px;
@@ -123,12 +232,18 @@ html {
 
     .React-logo {
       animation: rotation 5s infinite linear;
+      &:hover {
+        filter: hue-rotate(180deg);
+      }
     }
 
     .Sass-logo {
       transform: rotateX(40deg);
       animation: sass 2s infinite;
       animation-direction: alternate;
+      &:hover {
+        filter: hue-rotate(180deg);
+      }
     }
   }
 
