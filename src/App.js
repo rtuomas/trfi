@@ -1,5 +1,6 @@
 import './App.css'
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import ReactScrollDetect, { DetectSection } from 'react-scroll-detect';
 import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
@@ -9,6 +10,24 @@ const projects = require('./projects.json')
 
 
 function App() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+      //console.log(position)
+
+      if(position>400){
+        console.log('asd')
+      }
+
+  };
+
+  useEffect(() => {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+
+  }, []);
+
 
   return (
     <div className="App">

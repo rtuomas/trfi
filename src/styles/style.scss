@@ -160,7 +160,7 @@ html {
   //background-color: $ProjectsBackgroundColor;
 
   background:
-    url(../../public/overlay_trfi.png);
+    url(./overlay_trfi.png);
 
   .Projectlist {
     @include flexCenterWrap();
