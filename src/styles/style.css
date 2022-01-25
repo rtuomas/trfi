@@ -1,8 +1,10 @@
 html {
   width: 100% !important;
+  z-index: 0;
 }
 
 *, *::before, *::after {
+  z-index: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: auto;
@@ -19,53 +21,8 @@ html {
      object-fit: cover;
   opacity: 0.9;
   z-index: -1;
-  -webkit-filter: brightness(10%);
-          filter: brightness(10%);
-}
-
-.Box .Preview {
-  max-width: 100px;
-  z-index: 5;
-  padding: 25px;
-  position: fixed;
-  top: 50%;
-  background: #da4409;
-  -webkit-transition: 1s;
-  transition: 1s;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-}
-
-.Box .Preview .MoreInfo {
-  -webkit-transition: 1s;
-  transition: 1s;
-  left: -300px;
-  z-index: 5;
-  padding: 25px;
-  position: fixed;
-  top: 40%;
-  background: #09da67;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-}
-
-.Box .Preview .MoreInfo p {
-  color: #000000;
-}
-
-.Box .Preview p {
-  color: #d8d8d8;
-}
-
-.Box .Preview:active p, .Box .Preview:hover p {
-  color: #a80000;
-}
-
-.Box .Preview:active .MoreInfo, .Box .Preview:hover .MoreInfo {
-  -webkit-transition: 1s;
-  transition: 1s;
-  z-index: 6;
-  left: 0px;
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
 }
 
 .Home {
@@ -86,7 +43,7 @@ html {
           flex-direction: column;
   background-color: #1111644f;
   height: 100vh;
-  z-index: 3;
+  z-index: -2;
 }
 
 .Home h1 {
@@ -101,6 +58,109 @@ html {
   text-shadow: rgba(255, 174, 0, 0.63) 0px 0px 70px;
   -webkit-transition: 1000ms;
   transition: 1000ms;
+}
+
+.Box .Preview {
+  max-width: 100px;
+  z-index: 2;
+  padding: 25px;
+  position: fixed;
+  top: 50%;
+  background: #5c4d4d;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  /*
+    &:active, &:hover{
+      .MoreInfo {
+        transition: 1s;
+        left:0px;
+      }
+    }
+    */
+}
+
+.Box .Preview .MoreInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  left: -300px;
+  z-index: 3;
+  padding: 25px;
+  position: fixed;
+  top: 40%;
+  background: #5c4d4d;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.Box .Preview .MoreInfo .ProfilePic {
+  border-radius: 50%;
+  width: 80px;
+}
+
+.Box .Preview .MoreInfo p {
+  color: #ffa1a1;
+  margin: 0px;
+}
+
+.Box .Preview .MoreInfo ul {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px;
+}
+
+.Box .Preview .MoreInfo ul li {
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.Box .Preview .MoreInfo ul li a img {
+  width: 30px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: invert(56%) sepia(9%) saturate(1868%) hue-rotate(312deg) brightness(127%) contrast(101%);
+          filter: invert(56%) sepia(9%) saturate(1868%) hue-rotate(312deg) brightness(127%) contrast(101%);
+}
+
+.Box .Preview .MoreInfo ul li a img:hover {
+  -webkit-transform: scale(1.7) rotate(360deg);
+          transform: scale(1.7) rotate(360deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Box .Preview p {
+  color: #ffa1a1;
+}
+
+.Box:active .MoreInfo, .Box:hover .MoreInfo {
+  -webkit-transition: 1s;
+  transition: 1s;
+  left: 0px;
 }
 
 @-webkit-keyframes type {
@@ -148,6 +208,7 @@ html {
 }
 
 .About {
+  z-index: 1;
   background-color: black;
   -webkit-box-shadow: -1px 20px 60px 18px rgba(0, 0, 0, 0.979);
           box-shadow: -1px 20px 60px 18px rgba(0, 0, 0, 0.979);
@@ -238,6 +299,7 @@ html {
 }
 
 .Projects {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,7 +343,7 @@ html {
 .Projects .Projectlist li {
   list-style: none;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   padding: 10px;
   border-radius: 25px;
   max-width: 65%;
@@ -319,6 +381,7 @@ html {
 }
 
 .Footer {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

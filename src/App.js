@@ -11,6 +11,7 @@ const projects = require('./projects.json')
 
 
 function App() {
+  /*
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleScroll = () => {
@@ -28,6 +29,7 @@ function App() {
       window.addEventListener('scroll', handleScroll, { passive: true });
 
   }, []);
+  */
 
 
   return (
