@@ -1,6 +1,7 @@
 import './App.css'
 import React, {useState, useEffect} from 'react'
 import ReactScrollDetect, { DetectSection } from 'react-scroll-detect';
+import Box from './components/Box'
 import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
@@ -36,6 +37,10 @@ function App() {
         <source src={video} type="video/mp4"/>
         Your browser does not support the video tag.
       </video>
+
+
+      <Box />
+
 
       <Home />
       <About />

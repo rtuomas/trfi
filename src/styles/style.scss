@@ -39,12 +39,59 @@ html {
 
 
 
+.Box {
+
+  .Preview {
+    max-width: 100px;
+    z-index: 5;
+    padding: 25px;
+    position: fixed;
+    top: 50%;
+    background: rgb(218, 68, 9);
+    transition: 1s;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    .MoreInfo {
+      transition: 1s;
+      left:-300px;
+      z-index: 5;
+      padding: 25px;
+      position: fixed;
+      top: 40%;
+      background: rgb(9, 218, 103);
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      p {
+        color: #000000;
+      }
+    }
+
+    p {
+      color: #d8d8d8;
+    }
+
+    &:active, &:hover{
+      p {
+        color:#a80000;
+      }
+      .MoreInfo {
+        transition: 1s;
+        z-index: 6;
+        left:0px;
+      }
+    }
+  }
+}
+
+
 
 
 .Home {
   @include flexCenterWrap();
   background-color: $HomeBackgroundColor;
   height: 100vh;
+  z-index: 3;
 
   h1 {
     color: #ffa1a1;
