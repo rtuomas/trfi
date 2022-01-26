@@ -60,6 +60,33 @@ html {
   transition: 1000ms;
 }
 
+.Box {
+  position: fixed;
+  top: 50%;
+  height: 120px;
+  width: 119px;
+  left: 0;
+  z-index: 4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Box:hover .Preview {
+  margin-left: -130px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Box:hover .MoreInfo {
+  left: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  -webkit-box-shadow: -1px 10px 60px 10px rgba(0, 0, 0, 0.979);
+          box-shadow: -1px 10px 60px 10px rgba(0, 0, 0, 0.979);
+}
+
 .Box .Preview {
   max-width: 100px;
   z-index: 2;
@@ -71,17 +98,15 @@ html {
   transition: 1s;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  /*
-    &:active, &:hover{
-      .MoreInfo {
-        transition: 1s;
-        left:0px;
-      }
-    }
-    */
+  -webkit-box-shadow: -1px 10px 60px 10px rgba(0, 0, 0, 0.979);
+          box-shadow: -1px 10px 60px 10px rgba(0, 0, 0, 0.979);
 }
 
-.Box .Preview .MoreInfo {
+.Box .Preview p {
+  color: #ffa1a1;
+}
+
+.Box .MoreInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,8 +122,10 @@ html {
           align-items: center;
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-transition-delay: 0.6;
+          transition-delay: 0.6;
   left: -300px;
-  z-index: 3;
+  z-index: 4;
   padding: 25px;
   position: fixed;
   top: 40%;
@@ -107,17 +134,17 @@ html {
   border-bottom-right-radius: 25px;
 }
 
-.Box .Preview .MoreInfo .ProfilePic {
+.Box .MoreInfo .ProfilePic {
   border-radius: 50%;
   width: 80px;
 }
 
-.Box .Preview .MoreInfo p {
+.Box .MoreInfo p {
   color: #ffa1a1;
   margin: 0px;
 }
 
-.Box .Preview .MoreInfo ul {
+.Box .MoreInfo ul {
   padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,13 +159,13 @@ html {
   margin: 0px;
 }
 
-.Box .Preview .MoreInfo ul li {
+.Box .MoreInfo ul li {
   padding: 20px;
   width: 80px;
   height: 80px;
 }
 
-.Box .Preview .MoreInfo ul li a img {
+.Box .MoreInfo ul li a img {
   width: 30px;
   -webkit-transition: 1s;
   transition: 1s;
@@ -146,21 +173,11 @@ html {
           filter: invert(56%) sepia(9%) saturate(1868%) hue-rotate(312deg) brightness(127%) contrast(101%);
 }
 
-.Box .Preview .MoreInfo ul li a img:hover {
+.Box .MoreInfo ul li a img:hover {
   -webkit-transform: scale(1.7) rotate(360deg);
           transform: scale(1.7) rotate(360deg);
   -webkit-transition: 1s;
   transition: 1s;
-}
-
-.Box .Preview p {
-  color: #ffa1a1;
-}
-
-.Box:active .MoreInfo, .Box:hover .MoreInfo {
-  -webkit-transition: 1s;
-  transition: 1s;
-  left: 0px;
 }
 
 @-webkit-keyframes type {

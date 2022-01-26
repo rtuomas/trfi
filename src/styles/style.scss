@@ -62,10 +62,32 @@ html {
   }
 }
 
-
 .Box {
 
-  .Preview {
+  position: fixed;
+  top: 50%;
+  height: 120px;
+  width: 119px;
+  left: 0;
+  z-index: 4;
+  transition: 1s;
+
+  &:hover{
+    .Preview {
+      margin-left: -130px;
+      transition: 0.5s;
+    }
+    .MoreInfo {
+      left: 0px;
+      transition: 0.5s;
+      transition-delay: 0.3s;
+      box-shadow: -1px 10px 60px 10px rgba(0, 0, 0, 0.979);
+    }
+
+  }
+
+
+  .Preview{
     max-width: 100px;
     z-index: 2;
     padding: 25px;
@@ -75,77 +97,61 @@ html {
     transition: 1s;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-
-    .MoreInfo {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: 1s;
-      left:-300px; //-300px
-      z-index: 3;
-      padding: 25px;
-      position: fixed;
-      top: 40%;
-      background: #5c4d4d;
-      border-top-right-radius: 25px;
-      border-bottom-right-radius: 25px;
-      .ProfilePic {
-        border-radius: 50%;
-        width: 80px;
-      }
-      p {
-        color: #ffa1a1;
-        margin: 0px;
-      }
-      ul {
-        padding: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0px;
-         li {
-          padding: 20px;
-          width: 80px;
-          height: 80px;
-          a img {
-            width:30px;
-            transition: 1s;
-            filter: invert(56%) sepia(9%) saturate(1868%) hue-rotate(312deg) brightness(127%) contrast(101%);
-
-            &:hover {
-              transform: scale(1.7) rotate(360deg);
-              transition: 1s;
-            }
-          }
-
-        }
-      }
-    }
-
+    box-shadow: -1px 10px 60px 10px rgba(0, 0, 0, 0.979);
     p {
       color: #ffa1a1;
     }
+  }
 
-    /*
-    &:active, &:hover{
-      .MoreInfo {
-        transition: 1s;
-        left:0px;
+  .MoreInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    transition-delay: 0.6;
+    left:-300px; //-300px
+    z-index: 4;
+    padding: 25px;
+    position: fixed;
+    top: 40%;
+    background: #5c4d4d;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    .ProfilePic {
+      border-radius: 50%;
+      width: 80px;
+    }
+    p {
+      color: #ffa1a1;
+      margin: 0px;
+    }
+    ul {
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0px;
+       li {
+        padding: 20px;
+        width: 80px;
+        height: 80px;
+        a img {
+          width:30px;
+          transition: 1s;
+          filter: invert(56%) sepia(9%) saturate(1868%) hue-rotate(312deg) brightness(127%) contrast(101%);
+
+          &:hover {
+            transform: scale(1.7) rotate(360deg);
+            transition: 1s;
+          }
+        }
+
       }
     }
-    */
   }
-  &:active, &:hover{
-    .MoreInfo {
-      transition: 1s;
-      left:0px;
-    }
-  }
+
 }
-
-
-
 
 
 @keyframes type {

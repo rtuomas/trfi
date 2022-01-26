@@ -1,6 +1,6 @@
 import './App.css'
-import React, {useState, useEffect} from 'react'
-import ReactScrollDetect, { DetectSection } from 'react-scroll-detect';
+//import React, {useState, useEffect} from 'react'
+//import ReactScrollDetect, { DetectSection } from 'react-scroll-detect';
 import Box from './components/Box'
 import Home from './components/Home'
 import About from './components/About'
