@@ -2,11 +2,11 @@ import '../styles/style.css'
 import linkedin from '../styles/linkedin.png';
 import github from '../styles/github.png';
 import profile from '../styles/ic_launcher.png';
+import htmlcssjs from '../styles/htmlcssjs.png';
 
 function Box() {
   return (
     <div className="Box">
-      <div className="HoverPreview"></div>
 
       <div className="Preview">
         <p>About me</p>
@@ -14,8 +14,17 @@ function Box() {
 
       <div className="MoreInfo">
         <img className="ProfilePic" src={profile} alt="profile"/>
-        <h1>Tuomas Rajala</h1>
-        <p>Student</p>
+        <div className="AboutMe">
+          <h1>Tuomas Rajala</h1>
+          <p>Student at Metropolia UAS</p>
+          <p>Tools and Technologies: </p>
+          <div className="Tools">
+            <img src={htmlcssjs} alt="HTML, CSS, JS"/>
+            <img src="/react.png" className="React" alt="React logo"/>
+          </div>
+
+
+        </div>
 
         <ul>
           <li><a href={"https://www.linkedin.com/in/tuomasrajala/"}><img src={linkedin} alt="linkedin"/></a></li>
