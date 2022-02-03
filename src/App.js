@@ -11,6 +11,8 @@ const projects = require('./projects.json')
 
 
 function App() {
+
+  console.log('%c There might be some secrets in this page... ', 'background: #222; color: #ffa1a1');
   /*
   const [scrollPosition, setScrollPosition] = useState(0);
 

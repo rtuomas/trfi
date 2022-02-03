@@ -22,14 +22,13 @@ function Box() {
             <img src={htmlcssjs} alt="HTML, CSS, JS"/>
             <img src="/react.png" className="React" alt="React logo"/>
           </div>
-
-
-        </div>
-
-        <ul>
+          <ul>
           <li><a href={"https://www.linkedin.com/in/tuomasrajala/"}><img src={linkedin} alt="linkedin"/></a></li>
           <li><a href={"https://github.com/rtuomas"}><img src={github} alt="github"/></a></li>
         </ul>
+
+        </div>
+
 
       </div>
 
