@@ -21,6 +21,7 @@ function Box() {
           <div className="Tools">
             <img src={htmlcssjs} alt="HTML, CSS, JS"/>
             <img src="/react.png" className="React" alt="React logo"/>
+            <img src="/nodejs.png" className="Nodejs" alt="Nodejs logo"/>
           </div>
           <ul>
           <li><a href={"https://www.linkedin.com/in/tuomasrajala/"}><img src={linkedin} alt="linkedin"/></a></li>
