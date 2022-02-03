@@ -48,6 +48,10 @@ html {
 }
 
 .Home h1 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   text-align: center;
   color: #ffa1a1;
   font-size: 300%;
@@ -105,6 +109,10 @@ html {
 }
 
 .Box .Preview p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   text-align: center;
   color: #ffa1a1;
 }
@@ -139,34 +147,9 @@ html {
   background: #5c4d4d;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  /*
-    ul {
-      display: flex;
-      flex-direction: column;
-      padding: 0px;
-      justify-content: center;
-      margin: 0px;
-       li {
-        padding: 20px;
-        width: 80px;
-        height: 80px;
-        a img {
-          width:30px;
-          transition: 1s;
-          filter: invert(56%) sepia(9%) saturate(1868%) hue-rotate(312deg) brightness(127%) contrast(101%);
-
-          &:hover {
-            transform: scale(1.7) rotate(360deg);
-            transition: 1s;
-          }
-        }
-
-      }
-    }
-    */
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .Box .MoreInfo {
     padding: 10px;
   }
@@ -178,7 +161,7 @@ html {
   margin: 25px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .Box .MoreInfo .ProfilePic {
     width: 100px;
     margin: 10px;
@@ -202,7 +185,7 @@ html {
   width: 150px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .Box .MoreInfo .AboutMe .Tools img {
     width: 90px;
   }
@@ -213,7 +196,7 @@ html {
   margin-bottom: 8px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .Box .MoreInfo .AboutMe .Tools .React {
     width: 40px;
     margin-bottom: 4px;
@@ -225,7 +208,7 @@ html {
   margin-bottom: 12px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .Box .MoreInfo .AboutMe .Tools .Nodejs {
     width: 100px;
     margin-bottom: 4px;
@@ -462,6 +445,12 @@ html {
   padding: 10px;
   border-radius: 25px;
   max-width: 65%;
+}
+
+@media (max-width: 800px) {
+  .Projects .Projectlist li {
+    max-width: 85%;
+  }
 }
 
 .Projects .Projectlist li a h2 {

@@ -52,6 +52,7 @@ html {
   z-index: -2;
 
   h1 {
+    user-select: none;
     text-align:center;
     color: #ffa1a1;
     font-size: 300%;
@@ -100,13 +101,14 @@ html {
     border-bottom-right-radius: 25px;
     box-shadow: -1px 10px 60px 10px rgba(0, 0, 0, 0.979);
     p {
+      user-select: none;
       text-align:center;
       color: #ffa1a1;
     }
   }
 
   .MoreInfo {
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       padding: 10px;
     }
     display: flex;
@@ -128,7 +130,7 @@ html {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     .ProfilePic {
-      @media (max-width: 700px) {
+      @media (max-width: 800px) {
         width: 100px;
         margin: 10px;
       }
@@ -145,13 +147,13 @@ html {
       align-items:flex-start;
       .Tools {
         img {
-          @media (max-width: 700px) {
+          @media (max-width: 800px) {
             width: 90px;
           }
           width: 150px;
         }
         .React {
-          @media (max-width: 700px) {
+          @media (max-width: 800px) {
             width: 40px;
             margin-bottom: 4px;
           }
@@ -159,7 +161,7 @@ html {
           margin-bottom: 8px;
         }
         .Nodejs {
-          @media (max-width: 700px) {
+          @media (max-width: 800px) {
             width: 100px;
             margin-bottom: 4px;
           }
@@ -202,31 +204,7 @@ html {
         }
       }
     }
-/*
-    ul {
-      display: flex;
-      flex-direction: column;
-      padding: 0px;
-      justify-content: center;
-      margin: 0px;
-       li {
-        padding: 20px;
-        width: 80px;
-        height: 80px;
-        a img {
-          width:30px;
-          transition: 1s;
-          filter: invert(56%) sepia(9%) saturate(1868%) hue-rotate(312deg) brightness(127%) contrast(101%);
 
-          &:hover {
-            transform: scale(1.7) rotate(360deg);
-            transition: 1s;
-          }
-        }
-
-      }
-    }
-    */
   }
 
 }
@@ -347,6 +325,9 @@ html {
     }
 
     li {
+      @media (max-width: 800px) {
+        max-width: 85%;
+      }
       list-style: none;
       //background-color: $ProjectBackgroundColor;
       position: relative;
